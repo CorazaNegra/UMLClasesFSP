@@ -28,7 +28,7 @@ class BroadMeeting{
 }
 
 class Person{
-
+    name : String
 }
 
 class Member{
