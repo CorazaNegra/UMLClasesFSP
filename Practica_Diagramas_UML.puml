@@ -42,10 +42,10 @@ class BroadMember{
 AAUOC o-- Event
 AAUOC o-- Location
 AAUOC o-- Person
-Location -- Event
-Event -- Member
-Person -- Conference
-BroadMeeting -- BroadMember
+Location -- Event : isLocated In
+Event -- Member : attendsTo
+Person -- Conference : attendsTo
+BroadMeeting -- BroadMember : attendsTo
 Event <|-- Conference
 Event <|-- BroadMeeting
 Person <|-- Member
