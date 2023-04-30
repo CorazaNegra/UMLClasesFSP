@@ -12,4 +12,9 @@ class BroadMeeting{
 
 }
 
+Event <|-- Conference
+Event <|-- BroadMeeting
+
+
+
 @enduml
