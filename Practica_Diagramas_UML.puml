@@ -32,7 +32,7 @@ class Person{
 }
 
 class Member{
-
+    e-mail : String
 }
 
 class BroadMember{
