@@ -39,13 +39,15 @@ class BroadMember{
 
 }
 
-AAUOC o-- Event
-AAUOC o-- Location
-AAUOC o-- Person
-Location -- Event : isLocated In
-Event -- Member : attendsTo
-Person -- Conference : attendsTo
-BroadMeeting -- BroadMember : attendsTo
+hide members
+
+AAUOC o-- "0..*" Event
+AAUOC o-- "0..*" Location
+AAUOC o-- "0..*" Person
+Location "1" -- "0..*" Event : isLocated In
+Event "0..*" -- "0..*" Member : attendsTo
+Person "0..*" -- "0..*" Conference : attendsTo
+BroadMeeting "0..*" -- "0..*" BroadMember : attendsTo
 Event <|-- Conference
 Event <|-- BroadMeeting
 Person <|-- Member
