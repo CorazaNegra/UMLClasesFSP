@@ -32,11 +32,15 @@ class BroadMember{
 
 }
 
+AAUOC o-- Event
+AAUOC o-- Location
+AAUOC o-- Person
+Location -- Event
+Event -- Member
+Person -- Conference
 Event <|-- Conference
 Event <|-- BroadMeeting
 Person <|-- Member
 Member <|-- BroadMember
-Event -- Member
-Conference -- Person
 
 @enduml
