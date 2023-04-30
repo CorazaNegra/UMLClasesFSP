@@ -38,6 +38,7 @@ AAUOC o-- Person
 Location -- Event
 Event -- Member
 Person -- Conference
+BroadMeeting -- BroadMember
 Event <|-- Conference
 Event <|-- BroadMeeting
 Person <|-- Member
