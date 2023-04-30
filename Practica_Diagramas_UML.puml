@@ -28,7 +28,7 @@ Event <|-- Conference
 Event <|-- BroadMeeting
 Person <|-- Member
 Member <|-- BroadMember
-
-
+Event -- Member
+Conference -- Person
 
 @enduml
