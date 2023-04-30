@@ -12,8 +12,22 @@ class BroadMeeting{
 
 }
 
+class Person{
+
+}
+
+class Member{
+
+}
+
+class BroadMember{
+
+}
+
 Event <|-- Conference
 Event <|-- BroadMeeting
+Person <|-- Member
+Member <|-- BroadMember
 
 
 
